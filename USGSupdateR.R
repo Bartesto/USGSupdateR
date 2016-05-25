@@ -29,7 +29,7 @@
 rm(list=ls())
 pathRow = c("113075", "113074")
 outDir = "C:/processing/downloads_here/"
-softDir = "Z:/DOCUMENTATION/BART/Python/downloadLandsat/LANDSAT-Download-master"  
+softDir = "Z:/DOCUMENTATION/Software/R/R_Scripts/USGSupdateR"  
 
 
 USGSupdateR <- function(pathRow, imDir = "W:/usgs", outDir, softDir){
@@ -53,7 +53,7 @@ USGSupdateR <- function(pathRow, imDir = "W:/usgs", outDir, softDir){
     dates <- folds[!is.na(folds)]
     lastDate <- as.numeric(gsub("-", "", tail(dates, n = 1)))+1
     for(j in 1:length(sensors)){
-      pScript <- "download_landsat_scene_BHedit.py"
+      pScript <- "download_landsat_scene_20160525.py"
       pOption <- "-o scene"
       pSat <- paste("-b", sensors[j], sep = " ")
       pDateFrom <- paste("-d", lastDate, sep = " ")
