@@ -63,8 +63,10 @@ USGSupdateR <- function(pathRow, imDir = "W:/usgs", outDir, softDir){
       setwd(outDir)
       if(!file.exists(pathRow[i])){dir.create(pathRow[i])}
       pOut <- paste("--output", out, sep = " ")
-      pyCommand <- paste(pScript, pOption, pSat, pDateFrom, pDateTo, pScene,  
-                         pPassWord, pOut, sep = " ")
+      pyCommand <- paste(pScript, pOption, pSat, pDateFrom, pScene, pPassWord, 
+                         pOut, sep = " ")
+      # pyCommand <- paste(pScript, pOption, pSat, pDateFrom, pDateTo, pScene,  
+      #                    pPassWord, pOut, sep = " ")
       setwd(softDir)
       shell(pyCommand)
       print(paste0("Finished ", sensors[j]))
