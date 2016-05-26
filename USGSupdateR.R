@@ -29,7 +29,7 @@
 rm(list=ls())
 pathRow = c("113075", "113074")
 outDir = "C:/processing/downloads_here/"
-softDir = "Z:/DOCUMENTATION/Software/R/R_Scripts/USGSupdateR"  
+softDir = "Z:/DOCUMENTATION/Software/R/R_DEV/USGSupdateR"  
 
 
 USGSupdateR <- function(pathRow, imDir = "W:/usgs", outDir, softDir){
@@ -57,7 +57,6 @@ USGSupdateR <- function(pathRow, imDir = "W:/usgs", outDir, softDir){
       pOption <- "-o scene"
       pSat <- paste("-b", sensors[j], sep = " ")
       pDateFrom <- paste("-d", lastDate, sep = " ")
-      pDateFrom <- paste("-d", " 20160501")
       pScene <- paste("-s", pathRow[i], sep = " ")
       pPassWord <- "-u usgs.txt"
       setwd(outDir)
