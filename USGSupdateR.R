@@ -5,10 +5,10 @@
 # http://www.cesbio.ups-tlse.fr/multitemp/?p=3121#comment-69220
 # https://github.com/olivierhagolle/LANDSAT-Download
 #
-# This script will update a path row folder with any new images from the USGS
-# site based on the last date of imagery that we have processed. It will iterate 
-# through the 3 Landsat sensors and deliver zipped files to a location of choice.
-# It will also update multiple path rows if desired.
+# This script will update a path row folder in a processing location with any 
+# new images from the USGS site based on the last date of imagery that we have 
+# processed. It will iterate through the 3 Landsat sensors and deliver zipped 
+# files to a location of choice. It will also update multiple path rows if desired.
 #
 # Params:
 # pathRow = USGS path/row of desired location (enter vector of characters)
@@ -20,8 +20,7 @@
 # separated by a space, for the Earth Explorer website: 
 # http://earthexplorer.usgs.gov/
 # 
-# NOTE: This script does not work any faster than the USGS BDA tool and can take
-# sometime depending on internet speeds
+# NOTE: This script does not work any faster than the USGS BDA tool. 
 
 # Bart Huntley 20/05/2016
 
